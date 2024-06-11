@@ -81,22 +81,26 @@ public class C08List {
 
 //        배열과 List간의 변환
 //        1.String배열을 List<String>로 변환
-        String[] stArr = {"java", "python", "C++"};
-//        1-1.Arrays.asList
-        List<String> stList1 = new ArrayList<>(Arrays.asList(stArr));
-//        1-2.for문을 통해 담기
-//        1-3.streamApi(참고만)
-        List<String> stList2 = Arrays.stream(stArr).collect(Collectors.toList());
+//        String[] stArr = {"java", "python", "C++"};
+////        1-1.Arrays.asList
+//        List<String> stList1 = new ArrayList<>(Arrays.asList(stArr));
+////        1-2.for문을 통해 담기
+////        1-3.streamApi(참고만)
+//        List<String> stList2 = Arrays.stream(stArr).collect(Collectors.toList());
+//
+////        2.List<String>을 String배열로 변환
+////        2-1.for문을 통해 담기
+////        2-2.toArray
+//        String[] stArr2 = stList1.toArray(new String[stList1.size()]);
+//
+////        3.int배열을 List<Integer>로 변환
+////        3-1.for문을 통해 담기
+////        3-2.streamApi사용
+//        int[] intArr = {10,20,30,40};
+//        List<Integer> intList = Arrays.stream(intArr).boxed().collect(Collectors.toList());
 
-//        2.List<String>을 String배열로 변환
-//        2-1.for문을 통해 담기
-//        2-2.toArray
-        String[] stArr2 = stList1.toArray(new String[stList1.size()]);
-
-//        3.int배열을 List<Integer>로 변환
-//        3-1.for문을 통해 담기
-//        3-2.streamApi사용
-        int[] intArr = {10,20,30,40};
-        List<Integer> intList = Arrays.stream(intArr).boxed().collect(Collectors.toList());
+//        ----------------------------6/11---------------------------------------------
+//        <> -> 아무 타입이나 올 수 있다 (int, String, Object 뿐 아니라
+//        내가 만든 클래스 도 들어올 수 있다.
     }
 }

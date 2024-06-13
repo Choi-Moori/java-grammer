@@ -48,5 +48,34 @@ public class C09Map {
 //                        o1.compareTo(o2) :
 //                        o1.charAt(num)-o2.charAt(num));
 //        System.out.println(Arrays.toString(st));
+
+//        String객체 5개 정도 Stack추가후에 while 문을 통해 출력
+//        Stack<String> stack = new Stack<>();
+//
+//        for(int i = 0 ; i < 5 ; i++)
+//            stack.push("1");
+//        while(!stack.isEmpty())
+//            stack.pop();
+//        ArrayList<Integer> answer = new ArrayList<>();
+//
+//        answer.add(1);
+//        answer.add(2);
+
+//        deque
+
+        Deque<Integer> d1 = new ArrayDeque<>();
+        d1.add(10);
+        d1.add(20);
+        System.out.println(d1);
+        d1.addFirst(30);
+        System.out.println(d1);
+        System.out.println(d1.peekFirst());
+        System.out.println(d1.peekLast());
+        System.out.println(d1.pollFirst());
+        System.out.println(d1.pollLast());
+        System.out.println(d1);
+
+
+//        다리를 지나는 트럭
     }
 }

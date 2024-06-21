@@ -10,6 +10,13 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
+//  IO  - IO를 위한 라이브러리 모음
+//      - Buffer를 사용하려면 BufferedReader , BufferedWriter를 사용해야함
+//     -  Blocking 방식으로 해당 Thread는 데이터를 읽거나 쓸때까지 blocking 사용자가 다른 작업 불가.
+//  NIO - 버퍼가 내장
+//      - Non-Blocking 방식이다.
+//      - 버퍼 기반이 기본이다.
+
 public class C0703JsonParsing1 {
 //    자바 객체 -> JSON : 직렬화
 //    JSON -> 자바 객체 : 역직렬화
@@ -43,9 +50,14 @@ public class C0703JsonParsing1 {
     }
 }
 
+// objectMapper는 getter 또는 setter 메서드명을 통해 필드값을 유추
+// 실제 값의 setting은 reflection이라는 기술을 통해 변수값에 할당
+// reflection : 런타임 동작, 클래스/메서드/변수에 직접 접근
+
 // 변수를 출력할 때 getter 나 setter 로 저장한다.
 // getter 나 setter 둘중 아무거나 있어도 되지만 둘다 없으면 출력 오류
 // but setter만 있는 경우는 흔하지 않으니 getter로 해두자!
+
 class Student{
     int id;
     private String name;

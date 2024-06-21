@@ -19,7 +19,7 @@ public class C0701Exception {
 //        System.out.println("나눈 결과값은 "+result);
 
         // 예외가 발생할 것으로 예상되는 코드에 try로 감싸고
-        // 예외가 발생했을 때 대응하는 코드를 catch에 작성한다.
+        // 예외가 발생했을 때 대응하는 코드를 ca   tch에 작성한다.
 //        try{
 //            System.out.println("분자 입력");
 //            int head2 = Integer.parseInt(sc.nextLine());

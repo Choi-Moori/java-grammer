@@ -1,6 +1,7 @@
 package C08Thread;
 
 public class MainClass {
+
     public static void main(String[] args) throws InterruptedException {
 //        스레드 생성방법 2가지 : 1. 스레드 상속방식
 //        Thread1 t1 = new Thread1();
@@ -23,7 +24,6 @@ public class MainClass {
         for(int i = 0 ; i < 1000; i++){
             Thread t1 = new Thread(() -> Library.borrow());
             t1.start();
-
 //            동시성 이슈 해결방법 첫번째. join()메서드 사용
 //            join():다른 스레드의 완료전까지 새로운 스레드가 실행되지 않음
 //            t1.join();
